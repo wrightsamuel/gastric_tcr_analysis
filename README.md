@@ -58,11 +58,11 @@ Fig. 3A: Use 04042025_tr_score_umap.ipynb and read in the scRNA/TCR-seq data as 
 
 Fig. 3B, E-J: Use 20251124_initial_tr_analysis.ipynb and read in the scRNA/TCR-seq data as the adata object. You do not need the adata_t object. You will need to use the tcells_UCell_TRsig_scored.csv object. 
 
-Fig. 3C-D: Use 20251124_tr_pheno_dists.ipynb and read in the scRNA/TCR-seq data as the adat object. You do not need the adata_t object. You will need the tcells_UCell_TRsig_scored.csv object and the alluvial.py function.
+Fig. 3C-D: Use 20251124_tr_pheno_dists.ipynb and read in the scRNA/TCR-seq data as the adata object. Do not run the second line down of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments. You do not need the adata_t object. You will need the tcells_UCell_TRsig_scored.csv object and the alluvial.py function.
 
 ## Figure 4
 
-
+Fig. 4A-C: Use 20251127_blood_tcr_analysis.ipynb and read in the scRNA/TCR-seq data as the adata object. Do not run the second line down of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments. Load in beta CDR3 sequences from the blood TCR files. You will also need the beta CDR3 sequences from non-naive/early memory cells in the tumor in a file called single_cell_sequences_wo_t_naive_early_memory.csv, which is produced towards the bottom of the 20251124_initial_tr_analysis.ipynb notebook.
 
 ## Further questions
 
