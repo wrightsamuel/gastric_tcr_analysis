@@ -11,3 +11,6 @@ Full scRNA-seq data from the patient cohort are deposited in the European Nucleo
 Annotations and UMAP coordinates for full scRNA-seq data are available in the misc_data folder.
 
 Environment/package versions used for analysis are available in the python38.yml in this repository.
+
+# Figure 1
+
