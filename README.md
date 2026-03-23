@@ -32,13 +32,13 @@ These scRNA/TCR-seq samples contain pre-annotated samples that can be read in as
 
 Full scRNA-seq data from the patient cohort are deposited in the European Nucleotide Archive (ENA) under accession PRJEB60680 and these data will be provided upon reasonable written request for academic use and within the limitations of the clinical trial informed consent and general data protection regulations.
 
-Annotations and UMAP coordinates for full scRNA-seq data are available in the misc_data folder.
+Annotations and UMAP coordinates for full scRNA-seq data are available in the misc_data folder. For particular analyses, it is necessary to use a cell_counts_by_sample.csv object, which can be found in the misc_data folder as well. For particular analyses, the TR scores for each cell are needed, which are calculated per-cell in the tcells_UCell_TRsig_scored.csv file, which are included for simplicity but are calculated using the 11122024_tr_spectra_score.ipynb notebook in the supp_only folder. The 11122024_tr_spectra_score.ipynb notebook uses supplementary tables from the Spectra paper (Kunes RZ, et al. Nat Biotechnol. 2024 Jul;42(7):1084-1095. doi: 10.1038/s41587-023-01940-3.), which can be accessed publicly by downloaded the supplementary tables .xlsx file from the publication.
 
 Environment/package versions used for analysis are available in the python38.yml in this repository.
 
 ## Figure 1
 
-Fig. 1B-C: Use 20260328_umap_heatmap.ipynb and read in full scRNA-seq data with annotations and UMAP coordinates as adata object in second cell, and subset to only the following cell type annotations: 'T naive/early memory Cell', 'GZMK+ CD8 T progenitor ex Cell', 'CD8 Tem Cell', 'Tactiv Cell', 'CD8 HSP T cell', 'CD8 T naive/early memory Cell', 'CD4 T naive/early memory Cell', 'CD8 Cytotoxic T Cell', 'Tprolif Cell', 'Treg', 'Tc17', 'Terminal CD8 Tex Cell', 'Th17/Tc17', 'gd T Cell', 'NKT', 'Th17', 'Tnaive Cell', 'NK'. 
+Fig. 1B-C: Use 20260328_umap_heatmap.ipynb and read in full scRNA-seq data with annotations and UMAP coordinates as adata object in second cell, and subset to only the following cell type annotations: 'CD8 Cytotoxic T Cell', 'CD8 HSP T cell', 'CD8 Tem Cell', 'GZMK+ CD8 T progenitor ex Cell', 'NK', 'NKT', 'T naive/early memory Cell', 'Tactiv Cell', 'Tc17', 'Terminal CD8 Tex Cell', 'Th17', 'Th17/Tc17', 'Tprolif Cell', 'Treg', 'gd T Cell'.
 
 Fig. 1D-E: Use 20251123_milo.ipynb and read in full scRNA-seq data with annotations as adata_tnk object appearing in second cell (adata_tcr object in third cell is not necessary). Do not run the fifth as this was used for sensitivity analysis and does not reflect correct progression assignments.
 
@@ -46,12 +46,24 @@ Fig. 1D-E: Use 20251123_milo.ipynb and read in full scRNA-seq data with annotati
 
 Fig. 2A: Use 20251123_stickplot.ipynb and read in scRNA/TCR-seq data as adata_filt object. Do not run the third cell as this was used for sensitivity analysis and does not reflect correct progression assignments.
 
-Figure 2B: Use 20251123_all_timepoints_shared_stacked_barplot.ipynb and read in scRNA/TCR-seq data as adata object. Do not run the fourth cell as this was used for sensitivity analysis and does not reflect correct progression assignments. Figure 2B will be the figure entitled "Phenotypic Distribution of All Time Points Shared Clones, Subsampled", in which all the bars have a height of 1.
+Fig. 2B: Use 20251123_all_timepoints_shared_stacked_barplot.ipynb and read in scRNA/TCR-seq data as adata object. Do not run the fourth cell as this was used for sensitivity analysis and does not reflect correct progression assignments. Figure 2B will be the figure entitled "Phenotypic Distribution of All Time Points Shared Clones, Subsampled", in which all the bars have a height of 1.
 
-Figure 2C-F: Use 20251123_alluvial_plots.ipynb and read in scRNA/TCR-seq data as adata object. Do not run the second line down of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments. Figures are plotted in reverse order (2F appears first, followed by 2E, etc), and some manual editing needs to be done because the plots are reversed due to how the function for plotting the alluvial plots was written. The alluvial.py function needs to be downloaded from the following Github page: https://github.com/vinsburg/alluvial_diagram to run this script.
+Fig. 2C-F: Use 20251123_alluvial_plots.ipynb and read in scRNA/TCR-seq data as adata object. Do not run the second line down of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments. Figures are plotted in reverse order (2F appears first, followed by 2E, etc), and some manual editing needs to be done because the plots are reversed due to how the function for plotting the alluvial plots was written. The alluvial.py function needs to be downloaded from the following Github page: https://github.com/vinsburg/alluvial_diagram to run this script.
 
-Figure 2G: Use 20251123_tpex_expression_heatmap.ipynb and read in scRNA/TCR-seq data as adata object. Do not run the second line down of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments.
+Fig. 2G: Use 20251123_tpex_expression_heatmap.ipynb and read in scRNA/TCR-seq data as adata object. Do not run the second line down of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments.
+
+## Figure 3
+
+Fig. 3A: Use 04042025_tr_score_umap.ipynb and read in the scRNA/TCR-seq data as the adata object and the full scRNA-seq data as the adata_t object. You will also need to use the tcells_UCell_TRsig_scored.csv object to obtain the tumor-reactivity scores for each cell and the UMAP coordinates.
+
+Fig. 3B, E-J: Use 20251124_initial_tr_analysis.ipynb and read in the scRNA/TCR-seq data as the adata object. You do not need the adata_t object. You will need to use the tcells_UCell_TRsig_scored.csv object. 
+
+Fig. 3C-D: Use 20251124_tr_pheno_dists.ipynb and read in the scRNA/TCR-seq data as the adat object. You do not need the adata_t object. You will need the tcells_UCell_TRsig_scored.csv object and the alluvial.py function.
+
+## Figure 4
+
+
 
 ## Further questions
 
-Please direct further questions to the corresponding authors.
+Any questions regarding analysis code can be directed toward the corresponding authors.
