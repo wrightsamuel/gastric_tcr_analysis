@@ -16,3 +16,11 @@ Environment/package versions used for analysis are available in the python38.yml
 
 ## Figure 1
 
+Fig. 1B-C: Use 20260328_umap_heatmap.ipynb and read in full scRNA-seq data with annotations and UMAP coordinates as adata object in second cell, and subset to only the following cell type annotations: 'T naive/early memory Cell', 'GZMK+ CD8 T progenitor ex Cell', 'CD8 Tem Cell', 'Tactiv Cell', 'CD8 HSP T cell', 'CD8 T naive/early memory Cell', 'CD4 T naive/early memory Cell', 'CD8 Cytotoxic T Cell', 'Tprolif Cell', 'Treg', 'Tc17', 'Terminal CD8 Tex Cell', 'Th17/Tc17', 'gd T Cell', 'NKT', 'Th17', 'Tnaive Cell', 'NK'. 
+
+Fig. 1D-E: Use 20251123_milo.ipynb and read in full scRNA-seq data with annotations as adata_tnk object appearing in second cell (adata_tcr object in third cell is not necessary).
+
+## Figure 2
+
+
+
