@@ -38,7 +38,7 @@ Environment/package versions used for analysis are available in the python38.yml
 
 ## Figure 1
 
-Fig. 1A: Diagram summarizing cohort and sample collection
+Fig. 1A: Diagram summarizing cohort and sample collection.
 
 Fig. 1B-C: Use 20260328_umap_heatmap.ipynb and read in full scRNA-seq data with annotations and UMAP coordinates as adata object in second cell, and subset to only the following cell type annotations: 'CD8 Cytotoxic T Cell', 'CD8 HSP T cell', 'CD8 Tem Cell', 'GZMK+ CD8 T progenitor ex Cell', 'NK', 'NKT', 'T naive/early memory Cell', 'Tactiv Cell', 'Tc17', 'Terminal CD8 Tex Cell', 'Th17', 'Th17/Tc17', 'Tprolif Cell', 'Treg', 'gd T Cell'.
 
