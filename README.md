@@ -38,6 +38,8 @@ Environment/package versions used for analysis are available in the python38.yml
 
 ## Figure 1
 
+Fig. 1A: Diagram summarizing cohort and sample collection
+
 Fig. 1B-C: Use 20260328_umap_heatmap.ipynb and read in full scRNA-seq data with annotations and UMAP coordinates as adata object in second cell, and subset to only the following cell type annotations: 'CD8 Cytotoxic T Cell', 'CD8 HSP T cell', 'CD8 Tem Cell', 'GZMK+ CD8 T progenitor ex Cell', 'NK', 'NKT', 'T naive/early memory Cell', 'Tactiv Cell', 'Tc17', 'Terminal CD8 Tex Cell', 'Th17', 'Th17/Tc17', 'Tprolif Cell', 'Treg', 'gd T Cell'.
 
 Fig. 1D-E: Use 20251123_milo.ipynb and read in full scRNA-seq data with annotations as adata_tnk object appearing in second cell (adata_tcr object in third cell is not necessary). Do not run the fifth as this was used for sensitivity analysis and does not reflect correct progression assignments.
@@ -67,6 +69,10 @@ Fig. 4A-C: Use 20251127_blood_tcr_analysis.ipynb and read in the scRNA/TCR-seq d
 ## Figure 5
 
 Fig. 5
+
+# Figure 6
+
+Figure summarizing findings and interpretations from study.
 
 ## Further questions
 
