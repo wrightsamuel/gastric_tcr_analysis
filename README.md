@@ -2,6 +2,28 @@
 
 *The addition of aPD-1 to 5-FU/platinum in advanced gastric cancer (GC) yields variable responses. To understand cooperativity between chemotherapy and immunotherapy, we previously reported a phase II trial sequentially adding pembrolizumab to 5-FU/platinum. In this study, we use single-cell RNA- and TCR-sequencing to analyze 66,813 T cells from primary tumor biopsies pre-treatment, post-chemotherapy, and post-immunotherapy in 33 patients. We observed greater abundance, persistence, and recruitment of T cells with transcriptionally predicted tumor-reactivity in patients with prolonged progression-free survival (slow progressors). Increased B cell abundance and predicted B cell to T cell interactions supported T cell memory and co-stimulation, providing a mechanism for increased abundance and persistence of progenitor-exhausted and tumor-reactive T cells in slow progressors. T cell clones emerging in the tumor after immunotherapy were in the blood before treatment only in slow progressors. Our study thus highlights pre-treatment and early chemotherapy-induced T cell dynamics and B cell to T cell interactions that may drive durable response to chemoimmunotherapy in GC.*
 
+Corresponding authors:
+
+Arnav Mehta, MD, PhD 
+Massachusetts General Hospital Cancer Center
+55 Fruit St
+Boston, MA 02114
+amehta@broadinstitute.org
+
+Samuel J. Klempner, MD
+Massachusetts General Hospital Cancer Center
+55 Fruit St
+Boston, MA 02114
+sklempner@mgb.org
+
+Ryan Park, MD
+MD Anderson Cancer Center
+6565 MD Anderson Blvd
+Houston, TX 77030
+rpark@mdanderson.org
+
+## Data availability
+
 Pre-print is available on medRxiv: https://www.medrxiv.org/content/10.1101/2025.08.26.25334455v1
 
 Processed paired scRNA/TCR-seq samples as well as PBMC bulk TCR-seq samples are available in the Gene Expression Omnibus (GEO) under accession numbers GSE315928 and GSE315929, respectively. 
@@ -30,3 +52,6 @@ Figure 2C-F: Use 20251123_alluvial_plots.ipynb and read in scRNA/TCR-seq data as
 
 Figure 2G: Use 20251123_tpex_expression_heatmap.ipynb and read in scRNA/TCR-seq data as adata object. Do not run the second line down of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments.
 
+## Further questions
+
+Please direct further questions to the corresponding authors.
