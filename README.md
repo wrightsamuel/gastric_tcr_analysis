@@ -18,9 +18,15 @@ Environment/package versions used for analysis are available in the python38.yml
 
 Fig. 1B-C: Use 20260328_umap_heatmap.ipynb and read in full scRNA-seq data with annotations and UMAP coordinates as adata object in second cell, and subset to only the following cell type annotations: 'T naive/early memory Cell', 'GZMK+ CD8 T progenitor ex Cell', 'CD8 Tem Cell', 'Tactiv Cell', 'CD8 HSP T cell', 'CD8 T naive/early memory Cell', 'CD4 T naive/early memory Cell', 'CD8 Cytotoxic T Cell', 'Tprolif Cell', 'Treg', 'Tc17', 'Terminal CD8 Tex Cell', 'Th17/Tc17', 'gd T Cell', 'NKT', 'Th17', 'Tnaive Cell', 'NK'. 
 
-Fig. 1D-E: Use 20251123_milo.ipynb and read in full scRNA-seq data with annotations as adata_tnk object appearing in second cell (adata_tcr object in third cell is not necessary).
+Fig. 1D-E: Use 20251123_milo.ipynb and read in full scRNA-seq data with annotations as adata_tnk object appearing in second cell (adata_tcr object in third cell is not necessary). Do not run the fifth as this was used for sensitivity analysis and does not reflect correct progression assignments.
 
 ## Figure 2
 
+Fig. 2A: Use 20251123_stickplot.ipynb and read in scRNA/TCR-seq data as adata_filt object. Do not run the third cell as this was used for sensitivity analysis and does not reflect correct progression assignments.
 
+Figure 2B: Use 20251123_all_timepoints_shared_stacked_barplot.ipynb and read in scRNA/TCR-seq data as adata object. Do not run the fourth cell as this was used for sensitivity analysis and does not reflect correct progression assignments. Figure 2B will be the figure entitled "Phenotypic Distribution of All Time Points Shared Clones, Subsampled", in which all the bars have a height of 1.
+
+Figure 2C-F: Use 20251123_alluvial_plots.ipynb and read in scRNA/TCR-seq data as adata object. Do not run the second line down of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments. Figures are plotted in reverse order (2F appears first, followed by 2E, etc), and some manual editing needs to be done because the plots are reversed due to how the function for plotting the alluvial plots was written. The alluvial.py function needs to be downloaded from the following Github page: https://github.com/vinsburg/alluvial_diagram to run this script.
+
+Figure 2G: Use 20251123_tpex_expression_heatmap.ipynb and read in scRNA/TCR-seq data as adata object. Do not run the second line down of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments.
 
