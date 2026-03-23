@@ -32,7 +32,7 @@ These scRNA/TCR-seq samples contain pre-annotated samples that can be read in as
 
 Full scRNA-seq data from the patient cohort are deposited in the European Nucleotide Archive (ENA) under accession PRJEB60680 and these data will be provided upon reasonable written request for academic use and within the limitations of the clinical trial informed consent and general data protection regulations.
 
-Annotations and UMAP coordinates for full scRNA-seq data are available in the misc_data folder. For particular analyses, it is necessary to use a cell_counts_by_sample.csv object, which can be found in the misc_data folder as well. For particular analyses, the TR scores for each cell are needed, which are calculated per-cell in the tcells_UCell_TRsig_scored.csv file, which are included for simplicity but are calculated using the 11122024_tr_spectra_score.ipynb notebook in the supp_only folder. The 11122024_tr_spectra_score.ipynb notebook uses supplementary tables from the Spectra paper (Kunes RZ, et al. Nat Biotechnol. 2024 Jul;42(7):1084-1095. doi: 10.1038/s41587-023-01940-3.), which can be accessed publicly by downloaded the supplementary tables .xlsx file from the publication.
+Annotations (annot.csv) and T cell UMAP coordinates (umap.csv) for full scRNA-seq data are available in the misc_data folder. For particular analyses, it is necessary to use a cell_counts_by_sample.csv object, which can be found in the misc_data folder as well. For particular analyses, the TR scores for each cell are needed, which are calculated per-cell in the tcells_UCell_TRsig_scored.csv file, which are included for simplicity but are calculated using the 11122024_tr_spectra_score.ipynb notebook in the supp_only folder. The 11122024_tr_spectra_score.ipynb notebook uses supplementary tables from the Spectra paper (Kunes RZ, et al. Nat Biotechnol. 2024 Jul;42(7):1084-1095. doi: 10.1038/s41587-023-01940-3.), which can be accessed publicly by downloaded the supplementary tables .xlsx file from the publication. B cell UMAP coordinates are available in the misc_data folder as well under b_cell_umap.csv.
 
 Environment/package versions used for analysis are available in the python38.yml in this repository.
 
@@ -68,7 +68,11 @@ Fig. 4A-C: Use 20251127_blood_tcr_analysis.ipynb and read in the scRNA/TCR-seq d
 
 ## Figure 5
 
-Fig. 5
+Fig. 5A: Use 20251126_b_cell_props.ipynb and read in full scRNA-seq data as adata object and scRNA/TCR-seq data as adata_t object. Do not run the second line down of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments. Relabel B cell subtypes 'Activated B Cell', 'Atypical Memory B Cell', 'EIF6+ B Cell', 'GC/Proliferative B Cell', 'Naive B Cell', 'Resting Memory B Cell' as 'B'.
+
+Fig. 5B-C: Use 20260328_b_cell_umap.ipynb and read in full scRNA-seq data as adata object. Subset cells to only include 'Activated B Cell', 'Atypical Memory B Cell', 'EIF6+ B Cell', 'GC/Proliferative B Cell', 'Naive B Cell', 'Resting Memory B Cell', and load in B cell UMAP coordinates.
+
+Fig. 5D: 20251127_bt_interactions.ipynb and read in full scRNA-seq data as adata object and scRNA/TCR-seq data as adata_t object. Do not run the second line of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments. Create an alternate label for B cell subtypes where 'Activated B Cell', 'Atypical Memory B Cell', 'EIF6+ B Cell', 'GC/Proliferative B Cell', 'Naive B Cell', 'Resting Memory B Cell' as 'B', but keep the subtype annotations because in some cases T cell-B cell interactions are compared on the basis of the cell type as a whole and other times within specific subtypes.
 
 # Figure 6
 
