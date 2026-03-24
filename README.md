@@ -74,7 +74,7 @@ Fig. 5B-C: Use 20260328_b_cell_umap.ipynb and read in full scRNA-seq data as ada
 
 Fig. 5D: 20251127_bt_interactions.ipynb and read in full scRNA-seq data as adata object and scRNA/TCR-seq data as adata_t object. Do not run the second line of the second cell as this was used for sensitivity analysis and does not reflect correct progression assignments. Create an alternate label for B cell subtypes where 'Activated B Cell', 'Atypical Memory B Cell', 'EIF6+ B Cell', 'GC/Proliferative B Cell', 'Naive B Cell', 'Resting Memory B Cell' as 'B', but keep the subtype annotations because in some cases T cell-B cell interactions are compared on the basis of the cell type as a whole and other times within specific subtypes.
 
-# Figure 6
+## Figure 6
 
 Figure summarizing findings and interpretations from study.
 
